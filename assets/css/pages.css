@@ -1,0 +1,190 @@
+#hamburger {
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    z-index: 4;
+    color: #000;
+    background-color: #ededed;
+    top: 0rem;
+}
+
+#sidebar {
+    position: fixed;
+    top: 5rem;
+    /* Adjust if your top navbar's height changes */
+    left: -16rem;
+    /* Hide sidebar initially */
+    width: 16rem;
+    height: calc(100% - 5rem);
+    /* Adjust this value to match the top navbar's height */
+    background-color: #ededed;
+    transition: left 0.3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* Added padding at the bottom for scrolling */
+    overflow-y: auto;
+    /* Ensure scrollbar is available for overflow content */
+}
+
+
+#sidebar h2 {
+    color: #000;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#sidebar a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    background-color: #ae172f;
+    color: #fff;
+}
+
+.p_container {
+    margin-top: 7rem;
+    transition: margin-left 0.3s;
+}
+
+.p_container h1{
+    text-align: center;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Highlight class for active link */
+.active-link {
+    background-color: #ae172f !important;
+    /* Override any other background color */
+    color: #fff !important;
+}
+
+/* CSS for column cards */
+.c_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card__header img{
+    height: 200px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ece9e6;
+    background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tag {
+    align-self: flex-start;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    font-size: 0.75rem;
+}
+
+.tag+.tag {
+    margin-left: 0.5em;
+}
+
+.tag-blue {
+    background: #56ccf2;
+    background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+    color: #fafafa;
+}
+
+.tag-brown {
+    background: #d1913c;
+    background: linear-gradient(to bottom, #ffd194, #d1913c);
+    color: #fafafa;
+}
+
+.tag-red {
+    background: #cb2d3e;
+    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+}
+
+.card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.c_button{
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ae172f;
+}
+
+.c_button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media screen and (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+
+    #sidebar {
+        left: 0;
+    }
+
+    .p_container {
+        /* Width of the visible sidebar */
+        margin-left: 17rem;
+    }
+}
+
+@media screen and (max-width: 400px) {}

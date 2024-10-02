@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerdy Book</title>
+
+    <!-- ============= FAVICON ================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/logo/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/logo/site.webmanifest">
+
+    <!-- ============= ICONS ================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- ============= STYLESHEET ============== -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+
+    <!-- ============= JS ============== -->
+    <script src="../assets/js/home.js"></script>
+    <script src="../assets/js/top_navbar.js"></script>
+    <script src="../assets/js/footer.js"></script>
+    <script src="../assets/js/pages.js"></script>
+</head>
+
+<body>
+    <div class="home_container">
+
+        <!-- ================= NAVBAR ================= -->
+        <top-navbar></top-navbar>
+
+        <!-- ================= SIDE NAVBAR ================= -->
+        <div class="page_container">
+            <div id="hamburger" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></div>
+            <div class="p_sidebar">
+                <nav id="sidebar">
+                    <h2>Seed Labs</h2>
+                    <a href="intro.html">Introduction</a>
+                    <a href="network_sec.html" class="active-link">Network Security</a>
+                </nav>
+            </div>
+
+            <!-- ================= PAGE CONTENT ================= -->
+            <div class="p_container">
+                <h1>Network Security <a href="https://seedsecuritylabs.org/Labs_20.04/Networking/" target="_blank">Seed Labs</a></h1>
+
+                <!-- ================= CARDS ================= -->
+                <div class="c_container">
+                    <!-- ================= FIREWALL EXPLORATION ================= -->
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="../assets/pdf/seedlabs/network_security/firewall_exploration/firewall_exploration_lab.png"
+                                alt="card__image" class="card__image" width="600">
+                        </div>
+                        <div class="card__body">
+                            <span class="tag tag-red">Network Security</span>
+                            <h4>Firewall Exploration lab</h4>
+                            <p>This lab has a dual learning objective: to understand the workings of firewalls and
+                                to set up a basic firewall for a network. Students will begin by implementing a
+                                stateless packet-filtering firewall that examines packets and determines whether to
+                                drop or forward them based on predefined rules. This task will provide foundational
+                                insights into firewall operations.</p>
+                        </div>
+                        <div class="card__footer">
+                            <div class="c_button">
+                                <a href="../assets/pdf/seedlabs/network_security/firewall_exploration/Firewall.pdf"
+                                    target="_blank">Instructions <i class="fa-solid fa-download"></i></a>
+                            </div> 
+                            
+                            <div class="c_button">
+                                <a href="../assets/pdf/seedlabs/network_security/firewall_exploration/firewall_exploration_lab.pdf"
+                                    target="_blank">Solution <i class="fa-solid fa-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= VPN TUNNELING ================= -->
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="../assets/pdf/seedlabs/network_security/vpn_lab/vpn_tunnel.png" alt="card__image"
+                                class="card__image" width="600">
+                        </div>
+                        <div class="card__body">
+                            <span class="tag tag-red">Network Security</span>
+                            <h4>VPN Tunneling</h4>
+                            <p>This lab aims to elucidate VPN functionality, specifically focusing on transport
+                                layer-based VPNs. Through constructing a basic VPN, students will learn about its
+                                operational components, with an emphasis on tunneling technology. Unlike a full VPN
+                                setup, this lab does not cover encryption, which is addressed in a separate SEED
+                                lab.</p>
+                        </div>
+                        <div class="card__footer">
+                            <div class="c_button">
+                                <a href="../assets/pdf/seedlabs/network_security/vpn_lab/VPN_Tunnel.pdf"
+                                    target="_blank">Instructions <i class="fa-solid fa-download"></i></a>
+                            </div> 
+                            
+                            <div class="c_button">
+                                <a href="../assets/pdf/seedlabs/network_security/vpn_lab/Network_Security_VPN_Lab.pdf"
+                                    target="_blank">Solution <i class="fa-solid fa-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= EXTRA ================= -->
+                    <div class="card">
+                        <div class="card__header">
+                            <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image"
+                                class="card__image" width="600">
+                        </div>
+                        <div class="card__body">
+                            <span class="tag tag-red">Network Security</span>
+                            <h4>Race to your heart content</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae
+                                non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                        </div>
+                        <div class="card__footer">
+                            <div class="c_button">
+                                <a href="../assets/pdf/seedlabs/network_security/firewall_exploration/Firewall.pdf"
+                                    target="_blank">Instructions <i class="fa-solid fa-download"></i></a>
+                            </div> 
+                            
+                            <div class="c_button">
+                                <a href="../assets/pdf/seedlabs/network_security/firewall_exploration/firewall_exploration_lab.pdf"
+                                    target="_blank">Solution <i class="fa-solid fa-download"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ================= Footer ================= -->
+            <footer-down></footer-down>
+
+        </div>
+
+</body>
+
+</html>

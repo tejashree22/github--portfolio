@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Python",
+        "url": "../../python/",
+        "content": "Introduction to Python programming language, covering basics, data structures, control flow, and more."
+    },
+    {
+        "title": "SQL",
+        "url": "../../sql/",
+        "content": "SQL database management, queries, updates, and database design principles."
+    },
+    {
+        "title": "Cyber Security",
+        "url": "../../cyber-security/",
+        "content": "Fundamentals of cyber security, including encryption, network security, and threat mitigation."
+    },
+    {
+        "title": "Algorithms",
+        "url": "../../algorithms/",
+        "content": "Exploring sorting, searching algorithms, complexity analysis, and algorithmic strategies."
+    },
+    {
+        "title": "Seed Labs",
+        "url": "../../seed-labs/",
+        "content": "Hands-on computer security labs covering various topics in security."
+    }
+]
